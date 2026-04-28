@@ -1,0 +1,187 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#111;
+    color:white;
+    }
+
+    html{
+        scroll-padding-top:90px;
+        }
+    
+    header{
+    background:#000;
+    display:flex;
+    align-items:center;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    justify-content: space-between;
+    z-index: 10000;
+    }
+    
+    nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+    }
+    
+    nav a:hover{
+    color:#e50914;
+    }
+
+    @media (max-width: 768px) {
+        .filmer-grid {
+            flex-direction: column; 
+            align-items: center;   
+        }
+    
+        .film, .movie-card {
+            width: 90%;           
+            max-width: 300px;     
+        }
+    }
+
+
+    #hero {
+        text-align: center;
+        
+        padding: 40px 20px 80px 20px; 
+        background: url("felix-mooneeram-evlkOfkQ5rE-unsplash.jpg") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
+    
+     section#hero {
+        max-width: none;
+        height: 400px;
+
+    }
+    
+    section{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+    }
+    
+    h2{
+    border-bottom:2px solid #e50914;
+    padding-bottom:10px;
+    }
+    
+    
+    
+    .nyhet{
+    background:#1c1c1c;
+    padding:15px;
+    margin-top:15px;
+    border-radius:6px;
+    }
+
+   
+.nyhet-kort {
+    display: flex;
+    background: #1c1c1c;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background 0.3s;
+    border-left: 4px solid #e50914; 
+}
+
+.nyhet-kort:hover {
+    background: #252525;
+}
+
+
+.nyhet-kort img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.nyhet-text {
+    padding: 20px;
+}
+
+.datum {
+    color: #888;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+    
+    
+
+    
+    .filmer-grid{
+    display:flex;
+    gap:20px;
+    }
+    
+ 
+.film {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 6px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+
+.film:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.4); 
+    z-index: 10; 
+}
+
+.film a {
+    color: #149432;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.2s;
+}
+
+.film a:hover {
+    color: white;
+}
+    
+    .film img{
+    width:100%;
+    border-radius:5px;
+    height: 300px;
+    }
+    
+    
+    
+    footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    }
+
+
+    .movie-card {
+        width: 250px;
+        background: #1a1a1a;
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+      }
+      
+      .movie-card img { width: 100%; height: 400px; }
+      
+      .movie-info { padding: 15px; text-align: center; }
+
+
+    
